@@ -1,5 +1,15 @@
-div {
-	p{
-		color: red;
-	}
+@import "lib/bourbon/bourbon";
+@import "lib/neat/neat";
+
+.container {
+	 @include grid-container;
+	 outline: 1px solid red;
+}
+.sidebar {
+	 @include grid-column(3);
+	 outline: 1px solid purple;
+}
+.content {
+	 @include grid-column(9);
+	 outline: 1px solid green;
 }
